@@ -10,6 +10,7 @@ export const addViewToListingRoute = {
     const { results } = await db.query("SELECT * FROM listings WHERE id=?", [
       id,
     ]);
+
     const updatedListing = results[0];
     return updatedListing;
   },
